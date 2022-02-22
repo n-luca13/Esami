@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ApplicazioneEsame</string>
+
+    <!-- LOGIN STRINGS -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="nome_e_cognome">Nome e Cognome</string>
+    <string name="error_message_name">Inserire nome e cognome</string>
+    <string name="error_message_username">Inserire username</string>
+    <string name="error_message_email_missing">Inserire un indirizzo email</string>
+    <string name="error_message_email">Inserire una email valida</string>
+    <string name="error_message_email_duplicate">Indirizzo email già registrato</string>
+    <string name="error_message_password">Inserire la password</string>
+    <string name="error_valid_email_password">Controllare email e/o password</string>
+    <string name="password_dimenticata">Password dimenticata?</string>
+    <string name="unito_logo">unito logo</string>
+    <string name="myunito_logo">MyUnito logo</string>
+
+
+    <!-- BACHECA STRINGS -->
+    <string name="bacheca_prenotazioni">Bacheca prenotazioni</string>
+    <string name="hai_gi_prenotato_una_lezione_nella_stessa_ora">Hai già prenotato una lezione nello stesso orario</string>
+    <string name="bacheca_vuota">La tua bacheca è vuota.</string>
+    <string name="bacheca_vuota_prompt">Per prenotare una lezione \nclicca sul pulsante rosso in basso</string>
+    <string name="benvenuto">Benvenuto</string>
+
+    <!-- DIALOG STRINGS -->
+    <string name="dialog_cancel">Sei sicuro di voler disdire la prenotazione?</string>
+    <string name="dialog_confirm">Sei sicuro di voler confermare la tua presenza?</string>
+    <string name="dialog_title">Vuoi confermare?</string>
+    <string name="si">Sì</string>
+    <string name="no">No</string>
+
+    <!-- CALENDAR STRINGS -->
+    <string name="lunedì">LUN</string>
+    <string name="martedì">MAR</string>
+    <string name="mercoledì">MER</string>
+    <string name="giovedì">GIO</string>
+    <string name="venerdì">VEN</string>
+    <string name="sabato">SAB</string>
+    <string name="domenica">DOM</string>
+    <string name="settimana_e_giorno">Settimana e giorno</string>
+    <string name="_8_00_10_00" tools:ignore="TypographyDashes">8.00 - 10.00</string>
+    <string name="_10_00_12_00" tools:ignore="TypographyDashes">10.00 - 12.00</string>
+    <string name="_12_00_14_00" tools:ignore="TypographyDashes">12.00 - 14.00</string>
+    <string name="_14_00_16_00" tools:ignore="TypographyDashes">14.00 - 16.00</string>
+    <string name="_16_00_18_00" tools:ignore="TypographyDashes">16.00 - 18.00</string>
+    <string name="_18_00_20_00" tools:ignore="TypographyDashes">18.00 - 20.00</string>
+    <string name="arrow_left">Arrow Left</string>
+    <string name="arrow_right">Arrow Right</string>
+
+    <!-- COMMON STRINGS -->
+    <string name="attenzione">ATTENZIONE</string>
+    <string name="insegnamento">Insegnamento</string>
+    <string name="data">Data</string>
+    <string name="stato">Stato</string>
+    <string name="riepilogo">Riepilogo</string>
+    <string name="docente">Docente</string>
+    <string name="materia">Materia</string>
+    <string name="orario">Orario</string>
+    <string name="giorno">Giorno</string>
+    <string name="from_to_time">%1$d:00 - %2$d:00</string>
+    <string name="grazie">Grazie</string>
+    <string name="per_aver_confermato_al_tua_presenza">per aver confermato al tua presenza</string>
+    <string name="conferma">Conferma</string>
+    <string name="disdici">Disdici</string>
+    <string name="prenotazione_disdetta">Prenotazione disdetta</string>
+    <string name="check_img">check_img</string>
+    <string name="hai_frequentato_la_lezione">Hai frequentato la lezione?</string>
+    <string name="non_puoi_pi_sostenere_la_lezione">Non puoi più sostenere la lezione?</string>
+    <string name="nuova_prenotazione">Nuova prenotazione</string>
+    <string name="avanti">Avanti</string>
+    <string name="cerca_una_materia">Cerca una materia</string>
+    <string name="nessun_risultato">Nessun risultato</string>
+</resources>
