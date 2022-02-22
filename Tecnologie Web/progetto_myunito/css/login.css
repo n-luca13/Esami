@@ -1,0 +1,37 @@
+/* HEADER */
+#header {
+    border-bottom: 70px solid #d31125;
+}
+/* FORM */
+#form-container{
+    background-color: #e9ecef;
+    border-radius: .3rem
+}
+#form{
+    height: 150px;
+}
+.form-input{
+    width: 500px;
+}
+.form-input:focus{
+    margin: -1px;
+    outline: none;
+    border: solid 2px #c0c3c7;
+}
+
+/* REGISTRAZIONE */
+#reg-container>p{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+/* FOOTER */
+#footer{
+    position: fixed;
+}
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px){
+    .form-input{
+        width: 300px;
+    }
+}

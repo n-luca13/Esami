@@ -1,0 +1,71 @@
+/* TITOLO */
+#form-title-container{
+    font-size: 2rem;
+    color: #dc3545;
+}
+#form-container{
+    padding: 40px 25px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.form-input{
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: #535353;
+    border: solid 1px #c0c3c7;
+    border-radius: .3rem;
+}
+.form-input:focus{
+    margin: -1px;
+    outline: none;
+    border: solid 2px #c0c3c7;
+}
+.form-select{
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: #535353;
+    border: solid 1px #c0c3c7;
+    border-radius: .3rem;
+}
+.form-select:focus{
+    border: solid 1px #535353;
+    outline:none;
+}
+.form-button{
+    margin-top: 15px;
+    background-color: #d31125;
+    padding: 10px 10px;
+    font-size: .9rem;
+    border: solid 1px;
+    border-radius: .3rem;
+    color: white;
+    cursor: pointer;
+}
+.form-button:hover{
+    border: solid 1px #d31125;
+    box-shadow: -1px 1px 6px -1px rgba(90,80,80,0.39);
+    -webkit-box-shadow: -1px 1px 6px -1px rgba(90,80,80,0.39);
+    -moz-box-shadow: -1px 1px 6px -1px rgba(90,80,80,0.39);
+}
+.form-button:focus{
+    outline:none;
+}
+.form-button:active{
+    border: solid 1px black;
+}
+@media screen and (max-width: 600px){
+    /* #title-container>h1{
+        font-size: 1.7rem;
+        font-weight: 600;
+        color: #dc3545;
+    } */
+    .form-button{
+        font-size: 1.1rem;
+    }
+    label{
+        font-size: 1.1rem;
+    }
+}

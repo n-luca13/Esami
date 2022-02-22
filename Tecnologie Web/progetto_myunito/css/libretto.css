@@ -1,0 +1,13 @@
+label{
+    padding-top: 15px ;
+}
+.form-button{
+    margin-bottom: 15px;
+}
+.notShow{
+    display: none;
+}
+#footer{
+    position: relative;
+    bottom: 0;
+}

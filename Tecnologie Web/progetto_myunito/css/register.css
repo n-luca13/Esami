@@ -1,0 +1,60 @@
+#center-container {
+    width: 100%;
+}
+label{
+    padding-top: 15px ;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+.label-gender{
+    padding-top: 10px;
+}
+.label-residenza{
+    padding-top: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+.input-alert{
+    display: inline-block; 
+    margin: 0px 0px 0px 10px; 
+    font-weight: normal;
+    font-size: .9rem;
+    font-style: italic;
+    color: #d49100;
+}
+#form-residenza{
+    margin-right: -3px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#table-residenza{
+    padding-left: 30px;
+    border-left: 7px solid #c0c3c7;
+}
+tr td:first-child{
+    width: 100px;
+    padding-top:23px;
+}
+
+tr td:last-child{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.box-alert{
+    height: 23px;
+}
+#form-buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
+@media screen and (max-width: 600px){
+    #form-container{
+        padding-top: 0px;
+    }
+    #table-residenza{
+        padding-left: 0px;
+        border-left: 7px solid white;
+    }
+}

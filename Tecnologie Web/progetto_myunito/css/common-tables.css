@@ -1,0 +1,29 @@
+.container-table{
+    font-family: "Open sans", Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.text-left{
+    text-align: left;
+}
+.col-title{
+    padding: 5px;
+}
+.green{
+    color: green;
+}
+table{
+    border-collapse: collapse;   
+    border: 1px solid black;
+}
+thead{
+    font-size: 1rem;
+    padding: 15px;
+    background-color: #F6F6F6;
+}
+thead th, td {
+    border: 1px dotted black;
+    padding: 5px;
+}
+/* FOOTER */
+#footer{
+    position: fixed;
+}
