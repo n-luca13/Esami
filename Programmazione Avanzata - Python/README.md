@@ -1,5 +1,5 @@
 ## Advanced Programming: Python and Arduino
-#### Exam will be taken on June 20th, 2022
+#### Exam will be taken on June 7th, 2022
 
 - :muscle: First attempt to Python!
 - :grey_question: Pattern search in matrix:
