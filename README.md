@@ -1,6 +1,6 @@
 # Exams
 - 👋 Hi, I’m **Luca**, a master's degree **student** in Communication, ICT and Media at the University of Turin.
-- :see_no_evil: This repository is intended to keep track of my progress during the studies; hopefully it could be helpful for someone.
+- :see_no_evil: This repository is intended to keep track of my progress during the studies.
 - 👀 I’m interested in **web development**, **artificial intelligence** & **machine learning**.
 - 🌱 I’m currently learning 
   - how to program in **Python** and to prototype smart interactive objects with Arduino;
