@@ -7,7 +7,7 @@
   - Given a matrix containing 0 and 1 values, check for specific patterns of the same format, even if rotated.
   - The zeros do not count: matching is based only on the numbers one
   - The use of libraries for matrix analysis is not allowed
-  - Some of the first functions I wrote are awkward but I preferred to leave them there, if just to keep track of my progress.
+  - Some of the first functions I wrote are awkward but I preferred to leave them there in order to keep track of my progress.
 
 - :grey_question: **Pattern input and display with Arduino** 
   - No requirement was specified
