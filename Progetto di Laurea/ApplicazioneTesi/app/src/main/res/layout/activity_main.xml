@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activity_root"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true"
+            android:layout_marginHorizontal="1dp"
+            android:layout_marginVertical="4dp">
+
+            <EditText
+                android:id="@+id/notepad_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:descendantFocusability="beforeDescendants"
+                android:gravity="top|start"
+                android:imeOptions="flagNoExtractUi"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:privateImeOptions="disableToolbar=true"
+                android:scrollbars="vertical"
+                tools:ignore="LabelFor,VisualLintTextFieldSize,SpeakableTextPresentCheck" />
+        </ScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/generalToolsLayout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/border">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_weight="1.1"
+            android:orientation="horizontal"
+            android:layout_marginStart="1dp">
+
+            <Button
+                android:id="@+id/cutBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingHorizontal="0dp"
+                android:text="@string/taglia"
+                android:textColor="@color/gray_active"
+                android:background="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/copyBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingHorizontal="0dp"
+                android:text="@string/copia"
+                android:textColor="@color/gray_active"
+                android:background="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="VisualLintButtonSize" />
+
+            <Button
+                android:id="@+id/deleteBtn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingHorizontal="0dp"
+                android:text="@string/rimuovi"
+                android:textColor="@color/gray_active"
+                android:background="@android:color/transparent"
+                style="?android:attr/buttonBarButtonStyle"
+                tools:ignore="VisualLintButtonSize" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="end|center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginEnd="10dp">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/boldBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="2dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/bold_button"
+                android:paddingVertical="7dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_bold"
+                android:tint="@color/gray_active"
+                tools:ignore="TouchTargetSizeCheck,RedundantDescriptionCheck" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/highlighterBtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="2dp"
+                android:adjustViewBounds="true"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/highlighter_button"
+                android:paddingVertical="10dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_highlighter"
+                android:tint="@color/gray_active"
+                tools:ignore="TouchTargetSizeCheck,RedundantDescriptionCheck" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:elevation="6dp"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            android:layout_gravity="bottom|center_horizontal"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/toolbar_custom_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/keyboard_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_bg"
+                    android:contentDescription="@string/keyboard_button"
+                    android:paddingVertical="5dp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/gray_active"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_keyboard"
+                    tools:ignore="TouchTargetSizeCheck,RedundantDescriptionCheck,ImageContrastCheck" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/mic_btn"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_bg"
+                    android:contentDescription="@string/microphone_button"
+                    android:paddingVertical="7dp"
+                    android:scaleType="fitCenter"
+                    android:tint="@color/blue_1"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/ic_mic_small"
+                    tools:ignore="TouchTargetSizeCheck,ImageContrastCheck,RedundantDescriptionCheck" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/tutorial_btn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/tutorial_button"
+                        android:paddingVertical="10dp"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/blue_1"
+                        app:srcCompat="@drawable/ic_tutorial"
+                        tools:ignore="TouchTargetSizeCheck,RedundantDescriptionCheck" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/clear_btn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/clear_button"
+                        android:paddingVertical="11dp"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/blue_1"
+                        app:srcCompat="@drawable/ic_clear"
+                        tools:ignore="TouchTargetSizeCheck,RedundantDescriptionCheck" />
+
+                    <androidx.appcompat.widget.AppCompatImageButton
+                        android:id="@+id/undo_btn"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:adjustViewBounds="true"
+                        android:background="@android:color/transparent"
+                        android:contentDescription="@string/undo_button"
+                        android:paddingHorizontal="8dp"
+                        android:paddingVertical="5dp"
+                        android:scaleType="fitCenter"
+                        android:tint="@color/gray_7"
+                        app:srcCompat="@drawable/ic_undo"
+                        tools:ignore="TouchTargetSizeCheck,ImageContrastCheck,RedundantDescriptionCheck" />
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:visibility="gone"/>
+
+</LinearLayout>

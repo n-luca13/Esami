@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_disabled"
+    android:id="@+id/voice_interface"
+    android:paddingVertical="15dp"
+    android:paddingHorizontal="15dp"
+    android:elevation="6dp"
+    android:tag="SECOND_FRAGMENT">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/icon_voice_feedback"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:contentDescription="@string/in_ascolto"
+            android:paddingTop="1dp"
+            android:src="@drawable/ic_record_voice_over"
+            app:tint="@color/bckgrd_gray_3"
+            tools:ignore="ImageContrastCheck" />
+
+        <TextView
+            android:textAlignment="viewStart"
+            android:id="@+id/utterance_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textSize="17sp"
+            android:textColor="@color/gray_active"
+            android:layout_marginEnd="35dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+
+        android:id="@+id/vi_checkbox_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottom_layout"
+        android:layout_marginBottom="15dp">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/checkbox_text"/>
+
+        <TextView
+            android:id="@+id/checkbox_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/non_mostrare"
+            android:textColor="@color/gray_11"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/vi_center_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/nav_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/prev_strg"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/bckgrd_gray_3"
+                android:contentDescription="@string/previous"
+                android:src="@drawable/ic_previous"
+                android:tint="@color/gray_disabled"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/number_strg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginHorizontal="5dp"
+                android:textColor="@color/gray_11"
+                android:textSize="18sp" />
+
+            <androidx.appcompat.widget.AppCompatImageButton
+                android:id="@+id/next_strg"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/gray_active"
+                android:contentDescription="@string/next"
+                android:src="@drawable/ic_next"
+                android:tint="@color/white"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@id/nav_container"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/choose_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scegli_un_occorenza_di"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/gray_active"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/string_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="viewEnd"
+                android:textColor="@color/gray_active"
+                android:textSize="19sp"
+                android:textStyle="italic|bold" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/cancel_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:background="#00000000"
+            android:text="@string/u_annulla_u"
+            android:textColor="@color/gray_active"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/blue_1"
+            android:paddingHorizontal="30dp"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>

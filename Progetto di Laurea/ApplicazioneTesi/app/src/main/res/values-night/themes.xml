@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+<!-- Base application theme. -->
+<style name="Theme.ApplicazioneTesi" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <!-- Primary brand color. -->
+    <item name="colorPrimary">@color/bckgrd_gray_1</item>
+    <item name="colorPrimaryVariant">@color/bckgrd_gray_2</item>
+    <item name="colorOnPrimary">@color/blue_1</item>
+    <!-- Secondary brand color. -->
+    <item name="colorSecondary">@color/gray_active</item>
+    <item name="colorSecondaryVariant">@color/gray_disabled</item>
+    <item name="colorOnSecondary">@color/blue_2</item>
+    <!-- Status bar color. -->
+    <item name="android:statusBarColor">@color/black</item>
+    <!-- Customize your theme here. -->
+</style>
+
+<style name="CheckboxAlertDialogStyle" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+    <item name="colorPrimary">@color/red</item>
+</style>
+
+</resources>
